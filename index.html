@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Velvet Ember Cabaret</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #e5e7eb;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAV */
+        .navbar {
+            background: rgba(0,0,0,0.85);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* HERO */
+        .hero {
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+                url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .btn-gold {
+            background: #c9a14a;
+            color: #000;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            background: #e2b95d;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 80px 0;
+        }
+
+        .card {
+            background: #111827;
+            border: none;
+        }
+
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Velvet Ember</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Performers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shows</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1 class="mb-4">A Night of Cabaret, Burlesque & Fire</h1>
+        <p class="mb-4">Step into a world of theatrical elegance, bold performances, and unforgettable energy.</p>
+        <a href="#" class="btn btn-gold btn-lg">Reserve Your Experience</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section text-center">
+    <div class="container">
+        <h2 class="mb-4">About The Show</h2>
+        <p class="mx-auto" style="max-width: 700px;">
+            Velvet Ember Cabaret blends classic burlesque, theatrical storytelling, and modern stage artistry into a high-energy live experience.
+            Designed for private events, ticketed shows, and unforgettable nights, each performance delivers a unique atmosphere where elegance meets edge.
+        </p>
+    </div>
+</section>
+
+<!-- PERFORMERS -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Performers</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=800" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Scarlet V</h5>
+                        <p>Signature burlesque with a modern twist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Nova Luxe</h5>
+                        <p>High-energy choreography and stage presence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Ember Rose</h5>
+                        <p>Elegant, bold, and unforgettable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHOWS -->
+<section class="section text-center">
+    <div class="container">
+        <h2 class="mb-4">Upcoming Shows</h2>
+        <p>New performances are announced regularly. Private bookings available year-round.</p>
+        <a href="#" class="btn btn-outline-light mt-3">View Schedule</a>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-dark text-center">
+    <div class="container">
+        <h2 class="mb-3">Book a Private Experience</h2>
+        <p class="mb-4">Perfect for parties, events, and exclusive nights.</p>
+        <a href="#" class="btn btn-gold btn-lg">Book Now</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>© 2026 Velvet Ember Cabaret</p>
+        <p>Entertainment • Events • Private Shows</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
